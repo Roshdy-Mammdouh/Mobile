@@ -123,6 +123,7 @@ span{
     right: 0;
 }
 .header .navbar-toggle{
+    display: none;
     color: #fff;
     cursor: pointer;
     font-size: 20px;    
@@ -150,8 +151,23 @@ span{
 .header .navbar-toggle ul li a{
     padding: 0 0 0 0;
 }
+@media(max-width: 768px) {
+    .header .fa-bars{
+        display: block;
+    } 
+}
+@media(max-width: 767px) {
+    .header .fa-bars {
+        margin: 0 0 0 60px;
+    }
+}
 .header .links ul{
     display: inline-flex;
+}
+@media(max-width: 768px) {
+    .header .links ul{
+        display: none;
+    } 
 }
 .header li{
     margin: 0 20px 0 0;
@@ -245,6 +261,7 @@ font-weight: 700px;
     background: #e1e1e1;
     color: #000;
 }
+
 /* Mobile And Tablet */
 @media(max-width: 767px) {
     .header {
@@ -268,14 +285,7 @@ font-weight: 700px;
     }
 }
 /* Small Screen */
-@media(max-width: 1000px) {
-    .header .links{
-        display: none;
-    } 
-    .header .navbar-toggle{
-        display: none;
-    } 
-}
+
 /* End Header */
 /* Start Landing */
 .landpage{
