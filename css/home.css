@@ -16,8 +16,8 @@ body{
     font-weight: 700;
     margin-bottom: 28px;
     color: #666;
+    
 }
-
 a{
     text-transform: uppercase;
     text-decoration: none;
@@ -75,6 +75,9 @@ span{
 }
 /* Mobile */
 @media(max-width: 767px) {
+    body{
+        width: 100vh;
+    }
     .container {
         width: 600px;
     }
@@ -261,8 +264,6 @@ font-weight: 700px;
     background: #e1e1e1;
     color: #000;
 }
-
-/* Mobile And Tablet */
 @media(max-width: 767px) {
     .header {
         position: fixed;
@@ -284,8 +285,6 @@ font-weight: 700px;
         margin: 0 0 0 60px;
     }
 }
-/* Small Screen */
-
 /* End Header */
 /* Start Landing */
 .landpage{
@@ -293,12 +292,6 @@ font-weight: 700px;
     height: calc(100vh + 50px);
     min-height: 300px;
     background-image: linear-gradient(293deg, #ED355B 0%, var(--main-color) 100%);
-}
-.landpage .particles{
-    position: absolute;
-    width: 100%;
-    background-image: linear-gradient(293deg, #ED355B 0%, var(--main-color) 100%);
-    left: 0;
 }
 .landpage .p1-text,
 .landpage .p2-images{
@@ -385,6 +378,7 @@ font-weight: 700px;
     right: 0;
     top: 140px;
 }
+
 .landpage .p2-images img{
     position: absolute;
     width: 60%;
