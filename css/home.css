@@ -107,7 +107,6 @@ span{
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
-    
 }
 .header .container {
     display: flex;
@@ -123,11 +122,6 @@ span{
     position: absolute;
     right: 0;
 }
-@media(max-width: 1000px) {
-    .header .links{
-        display: none;
-    } 
-}
 .header .navbar-toggle{
     color: #fff;
     cursor: pointer;
@@ -135,11 +129,6 @@ span{
     padding: 5px 15px;
     border: 1px solid #fff;
     z-index: 2;
-}
-@media(min-width: 1000px) {
-    .header .navbar-toggle{
-        display: none;
-    } 
 }
 .header .navbar-toggle ul{
     position: absolute;
@@ -255,6 +244,37 @@ font-weight: 700px;
 .header .links .dropmenu a:hover{
     background: #e1e1e1;
     color: #000;
+}
+/* Mobile And Tablet */
+@media(max-width: 767px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+    }
+    .header .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .header .logo img {
+        max-height: 20px;
+    }
+    .header .navbar-toggle {
+        margin: 0 0 0 60px;
+    }
+}
+/* Small Screen */
+@media(max-width: 1000px) {
+    .header .links{
+        display: none;
+    } 
+    .header .navbar-toggle{
+        display: none;
+    } 
 }
 /* End Header */
 /* Start Landing */
@@ -424,6 +444,14 @@ font-weight: 700px;
     color: #666;
     padding-top: 15px;
     text-transform: uppercase;
+}
+@media(max-width: 767px) {
+    .feature .container {
+        display: block;
+    }
+    .feature .box{
+        max-width: 0 0 20px 0;
+    }
 }
 /* End Feature */
 /* Start Section Abut */
@@ -702,6 +730,15 @@ font-weight: 700px;
     padding-top: 15px;
     text-transform: uppercase;
 }
+@media(max-width: 767px) {
+    .rate .container {
+        display: block;
+    }
+    .rate .box {
+        margin: 10px 0 10px 0;
+    }
+}
+
 /* End rate Us  */
 /* Start Pricing */
 .pricing{
@@ -900,6 +937,14 @@ font-weight: 700px;
 }
 .our-team .info .box .box2 .data p{
     font-size: .875em;
+}
+@media(max-width: 767px) {
+    .our-team .info {
+        display: grid;
+    }
+    .our-team .info .box {
+        margin: 10px 0 10px 0;
+    }
 }
 /* End Our Team */
 /* Start Client */

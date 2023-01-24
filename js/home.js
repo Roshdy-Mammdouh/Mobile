@@ -53,6 +53,7 @@ owl.owlCarousel({
     dotsEach:true,
     
 });
+
 var owl = $('.second-owl');
 owl.owlCarousel({
     items:2,
@@ -63,3 +64,5 @@ owl.owlCarousel({
     dotsEach:true,
     
 });
+
+
