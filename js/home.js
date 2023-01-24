@@ -8,10 +8,9 @@ var typed = new Typed('.animate', {
     backSpeed: 50,
     loop: true
   });
-  
 
+  /* Change Header With Scroll Bar */
 window.onscroll = function() {headerFun()};
-
 function headerFun() {
 
     if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
@@ -31,6 +30,17 @@ function headerFun() {
 
     }   
 }
+
+/* Change Header With Media Query */
+//Animate Gear And Show Setting
+let gear = document.querySelector(".header .fa-bars");
+let navbar = document.querySelector(".header .navbar-dropdown"); 
+gear.onclick = function() {
+    this.classList.toggle("fa-bars-staggered");
+    navbar.classList.toggle("hidden");
+    navbar.classList.toggle("show");
+    
+};
 
 /* owl Slider Center Mode */
 var owl = $('.first-owl');
